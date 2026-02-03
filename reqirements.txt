@@ -1,0 +1,16 @@
+# Web Framework
+Flask==3.0.0
+
+# HTTP Client & Web Scraping
+requests==2.31.0
+beautifulsoup4==4.12.2
+lxml==4.9.3
+
+# AI & LLM
+google-generativeai==0.3.1
+
+# Environment Configuration
+python-dotenv==1.0.0
+
+# Utilities
+axios-compatible-json-handling  # 这种一般由 Flask 内置处理，不需额外包
