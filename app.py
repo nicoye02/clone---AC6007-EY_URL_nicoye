@@ -29,7 +29,7 @@ def analyze():
         desc, _ = get_business_description(target_url)
     else:
         # if its enterprise name, build Wikipedia link (steady and open-source)
-        # 例如: "NVIDIA" -> "https://en.wikipedia.org/wiki/NVIDIA"
+        # e.g.: "NVIDIA" -> "https://en.wikipedia.org/wiki/NVIDIA"
         target_url = f"https://en.wikipedia.org/wiki/{user_input.replace(' ', '_')}"
         desc, _ = get_business_description(target_url)
     
@@ -42,7 +42,7 @@ def analyze():
     else:
         ai_input = desc
     
-    # 2. Using AI for semantic annotation
+    # 3. Using AI for semantic annotation
     ai_result = get_gemini_labels(ai_input)
     
     return jsonify({
